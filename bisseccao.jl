@@ -1,4 +1,4 @@
-function bissecao(f::Function, a::Real, b::Real, estrategia::Symbol; atol=1e-6, rtol=1e-6, maxiter=10_000)
+function bisseccao(f::Function, a::Real, b::Real, estrategia::Symbol; atol=1e-6, rtol=1e-6, maxiter=10_000)
     function escolha(f::Function, a::Real, b::Real, estrategia::Symbol)
         if estrategia == :bisseccao
             x = 0.5 * a + 0.5 * b
